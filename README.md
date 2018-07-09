@@ -1,27 +1,17 @@
 # AngularNodeApiLogin
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+Requerimientos:
+- Node Js
+- Angular CLI ( npm install @angular/cli -g )
 
-## Development server
+Instrucciones:
+- npm install nodemon -g
+- npm install
+- Agregar el url hacia tu base de datos. Para esto puedes crear una cuenta gratis en mLab, crear una base de datos y seguir los pasos. Al finalizar te va a quedar un url con tu usuario y contraseña a la base de datos, este debes agregarlo dentro de un archivo .env que crees dentro de el root del repo.
+    - Deberia quedar algo como esto: MONGODB_URI=(el url hacia tu base de datos)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para levantar el servidor: nodemon
+Para levantar el cliente: ng serve --proxy-config pc.json
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# [Subir repo a heroku](https://devcenter.heroku.com/articles/git)
+ 
