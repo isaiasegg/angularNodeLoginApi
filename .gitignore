@@ -8,6 +8,7 @@
 # dependencies
 /node_modules
 .env
+.db
 
 # IDEs and editors
 /.idea
