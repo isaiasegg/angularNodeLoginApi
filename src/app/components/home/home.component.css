@@ -1,0 +1,378 @@
+.mapContainer {
+    width: 100vw;
+    height: 92vh;
+    margin-top: 8vh;
+}
+
+.centerButton {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: url(/assets/ui/center-map.svg);
+    z-index: 1;
+    border-radius: 500px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    bottom: 30vh;
+    right: 20px;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.centerCarButton {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: url(/assets/ui/center-car.svg);
+    z-index: 1;
+    border-radius: 500px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    bottom: 25vh;
+    right: 20px;
+    transition: box-shadow .2s ease-in-out, bottom .2s ease-in-out;
+}
+
+.person {
+    background: url(/assets/ui/center-car-person.svg);
+}
+
+.goToCar {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    z-index: 1;
+    border-radius: 500px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    bottom: 45vh;
+    pointer-events: none;
+    right: 30px;
+    opacity: 0;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4285f4;
+    transition: box-shadow .2s ease-in-out, bottom .2s ease-in-out, opacity .5s ease-in-out;
+}
+
+.goToCar_show {
+    pointer-events: initial;
+    opacity: 1;
+}
+
+.outGoToCar {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    z-index: 1;
+    border-radius: 500px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    bottom: 45vh;
+    pointer-events: none;
+    right: 30px;
+    opacity: 0;
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4285f4;
+    transition: box-shadow .2s ease-in-out, bottom .2s ease-in-out, opacity .5s ease-in-out;
+}
+
+.outGoToCar_show {
+    pointer-events: initial;
+    opacity: 1;
+}
+
+.centerCarButton:active {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+.centerButton:active {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+.goToCar:active {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+.roadsContainer {
+    position: fixed;
+    width: 90vw;
+    height: 75vh;
+    background: white;
+    z-index: 1;
+    bottom: -58vh;
+    left: calc(50vw - 45vw);
+    border-top: 5px solid #4285F4;
+    transition: bottom .5s ease;
+    overflow: auto;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.nowrap .mat-line {
+    white-space: initial !important;
+}
+
+.roadsContainer_start {
+    bottom: -68vh;
+}
+
+.roadsContainer_opened {
+    bottom: 0;
+    overflow: scroll;
+}
+
+.contPadding {
+    padding: 0px 20px
+}
+
+mat-icon .rec {
+    width: 70%;
+}
+
+.routesContainer {
+    padding: 20px
+}
+
+.routeDate {
+    position: absolute;
+    top: 0;
+    background: #4285F4;
+    left: 0;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.routeScore {
+    position: absolute;
+    top: 90px;
+    background: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 500px;
+    font-size: 25px;
+    font-weight: 800;
+    right: 20px;
+    color: #616161;
+    border-top: 2px solid #616161;
+    border-left: 1px solid #616161;
+    border-right: 1px solid #616161;
+}
+
+h4.address {
+    font-size: 13px !important;
+    font-weight: 800 !important;
+}
+
+p.time {
+    font-size: 12px !important;
+}
+
+.userInfo {
+    font-size: 17px !important;
+    color: #7b7b7b;
+    margin: 5px 0 !important
+}
+
+.userInfo::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+}
+
+.userInfoIcon {
+    font-size: 14px !important;
+    color: #7b7b7b;
+    width: 16px !important;
+    padding: 0 !important;
+    height: 16px !important;
+}
+
+span.info { 
+    padding: 0 15px; 
+    width: 50%;
+}
+
+.backdrop-routes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity .5s ease-in-out;
+}
+
+.backdrop-routes_opened {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.mat-card-image {
+    margin: 16px -16px 0px -16px;
+}
+
+.mat-list .mat-list-item.mat-2-line, .mat-list .mat-list-option.mat-2-line, .mat-nav-list .mat-list-item.mat-2-line, .mat-nav-list .mat-list-option.mat-2-line, .mat-selection-list .mat-list-item.mat-2-line, .mat-selection-list .mat-list-option.mat-2-line {
+    height: 52px;
+}
+
+.openRoutes {
+    border-radius: 50px;
+    border: 1px solid #dedede;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+}
+
+.spyMode {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #7daaf6;
+    z-index: 2;
+    padding-top: 200px;
+    text-align: center
+}
+
+.spyMode img {
+    width: 170px;
+}
+
+.parkedIn {
+    margin-top: 10px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.parkedIn_full {
+    white-space: initial;
+}
+
+.roadsContainer_spy {
+    border-top-color: #494949;
+}
+
+.carCenter {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    top: calc(50vh - 70px);
+    left: calc(50vw - 50px);
+    border-radius: 500px;
+    box-shadow: 0 0 0 900px rgba(63, 63, 63, 0.32);
+    -webkit-box-shadow: 0 0 0 900px rgba(63, 63, 63, 0.32);
+    pointer-events: none;
+    transition: opacity 1s ease;
+}
+
+.carCenter_closed {
+    opacity: 0;
+}
+
+.removeMapCenter {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.removeMapCenter_closed {
+    display: none;
+}
+
+.titleSpyMode {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+}
+
+button.deactivateSpyMode {
+    background: #71ba58;
+    padding: 10px 42px;
+    font-weight: 100;
+    border: 4px solid #4a7f38;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    transition: transform .5s ease-in-out;
+    -webkit-transition: transform .5s ease-in-out;
+}
+
+button.deactivateSpyMode:active {
+    transform: scale(1.1);
+}
+
+span.notiTitle {
+    width: 100%;
+    display: block;
+    font-weight: 600;
+    color: #494949;
+    font-size: 16px;
+    margin-bottom: 5px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+span.notiSubtitle {
+    width: 233px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+span.notiDate {
+    color: #4285F4;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.mat-expansion-panel-header-description, .mat-expansion-panel-header-title {
+    display: block;
+    flex-grow: 1;
+    margin-right: 16px;
+}
+
+.mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]).cdk-keyboard-focused, .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]).cdk-program-focused, .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]):hover {
+    background: #fff;
+}
+
+.shortcutCont > img {
+    width: 100%;
+}
+
+.shortcutCont p img {
+    width: 15px;
+    margin: 0 5px;
+}
+
+.shortcutCont {
+    text-align: center
+}

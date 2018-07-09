@@ -1,0 +1,108 @@
+.terms {
+    max-height: 30vh;
+    overflow: auto;
+    font-size: 12px;
+}
+
+mat-horizontal-stepper  {
+    margin: 0px 30px 30px 30px;
+} 
+.logo {
+    width: 15vh;
+    margin: 30px auto -20px auto;
+}
+
+ 
+
+.successReg {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #4285F4;
+    color: #fff;
+}
+
+.errorTerms{
+    color: white;
+    background: #d61919;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+ 
+
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -5;
+  }
+  
+  .container {
+    position: fixed; 
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -50;
+  }
+  
+  .logo  {
+      width: 110px;
+      margin: 5vh auto 0vh auto;
+  }
+  
+   
+  
+  .buttonForm{
+      color: #fff;
+      margin-top: 20px;
+      background: #4285F4;
+  }
+  
+  form.login-form {
+      max-width: 500px;
+      width: calc(100vw - 60px);
+      padding: 30px;
+      margin: 0 auto;
+      min-height: 100vh;
+  
+  }
+  
+  mat-form-field.login-full-width {
+      width: 100%;
+  }
+  
+  
+  .full-button{
+      width: 100%
+  }
+  
+  
+  .errorMsg {
+      background: #e43e3e;
+      padding: 5px 10px 8px 10px;
+      width: calc(100% - 20px);
+      text-align: center;
+      font-weight: 600;
+      color: #fff;
+      border-radius: 5px;
+  }
+  
+  .successMsg {
+      background: rgb(84, 194, 84);
+      padding: 5px 10px 8px 10px;
+      width: calc(100% - 20px);
+      text-align: center;
+      font-weight: 600;
+      color: #fff;
+      border-radius: 5px;
+  }
+  
+  @media (max-height: 350px) {
+      .bg video {
+          margin-left: 0;
+      }
+  }
+  
